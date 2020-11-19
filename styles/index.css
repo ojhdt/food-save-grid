@@ -1,0 +1,175 @@
+/**
+ * index.scss
+ * - Add any styles want here!
+ */
+
+body {
+  background: rgba(245, 245, 245, 1);
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+div{
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+}
+
+h2{
+  font-size: 4em;
+  margin: 0;
+  padding: 0;
+}
+
+h3{
+  margin: 0;
+  padding: 0;
+}
+
+h4{
+  margin: 0;
+  padding: 0;
+}
+
+a:link{color: #333; text-decoration: none;}
+a:visited{color: #333; text-decoration: none;}
+a:hover{color: #333; text-decoration: none;}
+a:active{color: #333; text-decoration: none;}
+
+main{
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+}
+
+.bgcolor_change{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header{
+  background-color: yellow;
+  display: grid;
+  grid-template-rows: 15px 30px 15px;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+}
+
+header h1{
+  font-size: 1.5em;
+  grid-row: 2 / 3;
+  grid-column: 2 / 4;
+}
+
+header ul{
+  display: grid;
+  grid-row: 2 / 3;
+  grid-column: 10 / 13;
+  grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+  font-size: .8em;
+}
+
+.A{
+  background-color: yellowgreen;
+  display: grid;
+  grid-template: repeat(12, 10vh) / repeat(12, 1fr);
+}
+
+.A > .img{
+  grid-row: 2 / 12;
+  grid-column: 3 / 7;
+}
+
+.A > .img > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1em 1em 1em 1em;
+}
+
+.A > .text_1{
+  grid-row: 5 / 9;
+  grid-column: 8 / 12;
+}
+
+.B{
+  background-color: violet;
+  display: grid;
+  grid-template: repeat(12, 10vh) / repeat(12, 1fr);
+}
+
+.B > .text_2{
+  grid-row: 5 / 9;
+  grid-column: 2 / 6;
+}
+
+.C{
+  background-color: turquoise;
+  display: grid;
+  grid-template: repeat(12, 10vh) / repeat(12, 1fr);
+}
+
+.C > .text_3{
+  grid-row: 1 / 3;
+  grid-column: 4 / 10;
+}
+
+.C > .text_3 > h2{
+  display: grid;
+  justify-items: center;
+}
+
+.box h3{
+  font-size: 1em;
+}
+
+.box p{
+  font-size: .9em;
+  color: #333;
+}
+
+#list_2{
+  grid-row: 5 / 10;
+  grid-column: 2 / 5;
+  display: grid;
+  align-content: space-between;
+}
+
+.C img{
+  grid-row: 6 / 8;
+  grid-column:  6/ 8;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#list_3{
+  grid-row: 5 / 10;
+  grid-column: 9 / 12;
+  display: grid;
+  align-content: space-between;
+}
+
+.D{
+  background-color: tomato;
+  height: 100vh;
+}
+
+footer{
+  background-color: teal;
+}
