@@ -162,14 +162,15 @@ header ul{
 .B > div >.text_2{
   grid-row: 5 / 9;
   grid-column: 2 / 6;
+  opacity: var(--opacity);
 }
 
 .B >ul{
   width: 70vh;
   position: fixed;
-  top: 0;
-  right: 0;
-  transform: translateY(calc(var(--up)*-160vh));
+  top: -100vh;
+  right: 20vh;
+  transform: translateY(calc(var(--up)*-200vh));
 }
 
 .B li{
@@ -200,15 +201,29 @@ header ul{
 }
 
 .C{
-  background-color: turquoise;
   display: grid;
   grid-template: repeat(12, 10vh) / repeat(12, 1fr);
   z-index: 7;
+  color: #eee;
+  position: fixed;
+  top: 10vh;
 }
 
 .C > .text_3{
   grid-row: 1 / 3;
   grid-column: 4 / 10;
+}
+
+#l7{
+  transform: translateY(calc(var(--up)*100vh));
+}
+
+#l8{
+  transform: translateY(calc(var(--up)*100vh));
+}
+
+#rice{
+  transform: translateY(calc(var(--up)*50vh));
 }
 
 .C > .text_3 > h2{
@@ -222,16 +237,13 @@ header ul{
 }
 
 .box p{
-  border-top: #333 solid thin;
   font-size: .9em;
-  color: #333;
 }
 
 #list_2{
   grid-row: 5 / 10;
   grid-column: 2 / 5;
   display: grid;
-  align-content: space-between;
 }
 
 .C img{
@@ -246,23 +258,22 @@ header ul{
   grid-row: 5 / 10;
   grid-column: 9 / 12;
   display: grid;
-  align-content: space-between;
 }
 
 .D{
-  background-color: #eee;
+  margin-top: 150vh;
   display: grid;
-  grid-template: repeat(8, 10vh) / repeat(12, 1fr);
+  grid-template: repeat(10, 10vh) / repeat(12, 1fr);
+  z-index: 9;
 }
 
 .D > .text_4 {
-  background-color: aqua;
-  grid-row: 1 / 4;
+  background-color: #eee;
+  grid-row: 1 / 6;
   grid-column: 1 / 13;
   display: grid;
   justify-items: center;
-  align-items: center;
-  z-index: 9;
+  align-content: center;
 }
 
 .D > img{
@@ -273,8 +284,11 @@ header ul{
 }
 
 .transparent{
+  background-image: url(../img/child.jpg);
+  background-position-y: var(--slide);
+  background-size: cover;
   grid-column: 1 / 13;
-  grid-row: 4 / 9;
+  grid-row: 6 / 11;
   height: 100%;
   font-size: 1.5em;
   display: grid;
