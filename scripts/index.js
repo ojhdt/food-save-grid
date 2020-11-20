@@ -17,6 +17,7 @@ const bg= document.querySelector('.bgcolor_change');
 const l4= document.querySelector('#l4');
 const l5= document.querySelector('#l5');
 const l6= document.querySelector('#l6');
+const list1= document.querySelector('#list_1');
 
 document.addEventListener('scroll', (e) => {
     let scrolled = document.documentElement.scrollTop / (document.documentElement.scrollHeight - document.documentElement.clientHeight)
@@ -28,4 +29,5 @@ document.addEventListener('scroll', (e) => {
     l4.style.setProperty('--fade', `${100 - Slide(scrolled, 0.25, 0.05)*100}%`)
     l5.style.setProperty('--fade', `${100 - Slide(scrolled, 0.28, 0.05)*100}%`)
     l6.style.setProperty('--fade', `${100 - Slide(scrolled, 0.31, 0.05)*100}%`)
+    list1.style.setProperty('--up', Slide(scrolled, 0.25, 0.1))
 })
