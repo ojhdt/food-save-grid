@@ -223,7 +223,7 @@ header ul{
 }
 
 #rice{
-  transform: translateY(calc(var(--up)*50vh));
+  transform: translateY(calc(var(--up)*100vh));
 }
 
 .C > .text_3 > h2{
